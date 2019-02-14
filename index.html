@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Solar System</title>
+
+  <link rel="stylesheet" href="vendors/jstree/themes/default/style.min.css">
+  <script src="vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+  <script src="vendors/three.js/three.js"></script>
+  <script src="vendors/three.js/loaders/GLTFLoader.js"></script>
+  <script src="vendors/three.js/loaders/FBXLoader.js"></script>
+  <script src="vendors/three.js/loaders/OBJLoader.js"></script>
+  <script src="vendors/three.js/controls/OrbitControls.js"></script>
+  <script src="vendors/jstree/jstree.min.js"></script>
+  <script src="vendors/zlib/inflate.min.js"></script>
+
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/conversions.js"></script>
+  <script src="src/js/Universe.js"></script>
+  <script src="src/js/Astro.js"></script>
+  <script src="src/js/tree.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      main();
+    });
+  </script>
+</head>
+
+<body>
+  <a id="fmogh" href="https://github.com/jginsburgn/solar-system"><img width="149" height="149"
+      src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149"
+      class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+  <div id="loading-holder">
+    <h1>Loading...</h1>
+    <h2>Be patient, three-dimensional models are a bit heavy.</h2>
+    <p>This visualization of the Solar System is to dimensional scale. Orbit radius and inclination are real. Camera is orthogonal. Planetary orbital obliquity is also real. Astros' orbital and rotational periods ration among each other is the same as in actuality. Choose an astro from the left tree view to make as camera target. Rotate and zoom with mouse drag and scroll, respectively. Enjoy!</p>
+  </div>
+  <div id="tree-holder">
+    <div id="tree"></div>
+  </div>
+  <div id="canvas-holder">
+
+  </div>
+</body>
+
+</html>
