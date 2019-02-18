@@ -284,7 +284,7 @@ class Astro {
   }
 
   getTreeInfo() {
-    const root = { text: this.name, children: [] };
+    const root = { text: this.name, children: [], state: { opened: true } };
     for (let orbiter of this.orbiters) {
       root.children.push(orbiter.orbiter.getTreeInfo());
     }

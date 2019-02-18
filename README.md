@@ -25,3 +25,4 @@ Artwork, including textures and 3D models, were retrieved from:
 ## Contributors
 
 * Jonathan Ginsburg <jginsburgn@gmail.com>
+* Octavio Navarro
